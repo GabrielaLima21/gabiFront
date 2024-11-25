@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athenas Bank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- Menu Lateral -->
+    <div class="sidebar">
+        <img src="logo.png" alt="Logo Athenas Bank">
+        <h1 class="tituloSidebar">Athenas Bank</h1>
+        <div class="menu-item">
+            <img src="vector.png" alt="" class="icon"> 
+            <a href="#">Inicio</a>
+        </div>
+        <div class="menu-item">
+            <img src="carteira.png" alt="" class="icon"> 
+            <a href="#">Conta</a>
+        </div>
+        <div class="menu-item">
+            <img src="transf.png" alt="" class="icon"> 
+            <a href="#">Solicitações</a>
+        </div>
+        <div class="menu-item">
+            <img src="declar.png" alt="" class="icon"> 
+            <a href="#">Declarações</a>
+        </div>
+        <div class="menu-item">
+            <img src="vector.png" alt="" class="icon"> 
+            <a href="#">Cartões</a>
+        </div>
+        <div class="menu-item">
+            <img src="imager.png" alt="" class="icon"> 
+            <a href="#">Transferências</a>
+        </div>
+        <a href="#" class="logout">Sair</a>
+    </div>
+
+
+    <!-- Conteúdo Principal -->
+    <div class="content">
+        <h2>Bem-vindo ao <span>Athenas Bank</span>:</h2>
+        <p>Liberdade em Crédito, Oportunidade Sem Espera!</p>
+
+        <div class="slider-container">
+            <div class="slider-value" id="slider-value">100</div>
+            <input type="range" id="credit-slider" class="slider" min="0" max="6000" value="100" oninput="updateSliderValue(this.value)">
+        </div>
+
+        <!-- Botão que redireciona para o formulário -->
+        <button id="btn-solicitar">Solicitar</button>
+    </div>
+</div>
+
+<script>
+    // Função para atualizar o valor do slider
+    function updateSliderValue(value) {
+        document.getElementById('slider-value').textContent = value;
+    }
+
+    // Função para redirecionar ao clicar no botão
+    document.getElementById("btn-solicitar").onclick = function() {
+        window.location.href = "Formulario.html";
+    };
+</script>
+
+</body>
+</html>

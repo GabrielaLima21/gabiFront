@@ -1,0 +1,298 @@
+@charset "ISO-8859-1";
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #7D0000;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    color: #FFFFFF;
+}
+
+/* Menu Lateral */
+.Frame-1 {
+    width: 143.7px;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 56px;
+    margin: 53px 49.8px 168.8px 48.5px;
+    padding: 0;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #A00000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    color: #FFFFFF;
+}
+
+.sidebar img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.sidebar h1 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Estilo do menu item */
+.sidebar .menu-item {
+    display: flex;            /* Usamos flexbox para alinhar os itens */
+    align-items: center;      /* Alinha verticalmente ao centro */
+    margin: 10px 0;           /* Espaçamento entre os itens do menu */
+    padding: 10px;            /* Padding para dar um pouco de espaço */
+    font-size: 16px;          /* Tamanho da fonte */
+    cursor: pointer;         /* Para mostrar que o item é clicável */
+    color: #FFFFFF;           /* Cor do texto */
+    text-decoration: none;    /* Remove o sublinhado do link */
+    transition: background-color 0.3s; /* Transição suave de cor */
+}
+
+/* Alinhando a logo e o texto dentro do menu item */
+.sidebar .menu-item img.icon {
+    width: 18px;              /* Definindo o tamanho do ícone (logo) */
+    height: 18px;             /* Altura do ícone */
+    margin-right: 10px;       /* Espaçamento entre o ícone e o texto */
+}
+
+/* Hover para o efeito visual */
+.sidebar .menu-item:hover {
+    background-color: #FF6347; /* Cor de fundo quando passar o mouse */
+}
+
+.tituloSidebar {
+    font-family: Aldrich;
+    color: #F4DB8F;
+    font-size: 16px;
+}
+
+.sidebar .logout {
+    margin-top: auto;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #FF0000;
+    color: #FFFFFF;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+/* Conteúdo Principal */
+.content {
+    flex: 1;
+    background: linear-gradient(to bottom, #7D0000, #A00000);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.content h2 {
+    color: #FFFFFF;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.content h2 span {
+    color: #FFD700;
+}
+
+.content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* Slider */
+.slider-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.slider-value {
+    margin-right: 10px;
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.slider {
+    width: 300px;
+}
+
+/* Botão */
+.btn-solicitar {
+    background-color: #B59A44;
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-solicitar:hover {
+    background-color: #DAA520;
+}
+
+/* Footer */
+.footer {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.footer .page {
+    padding: 5px 10px;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer .page.active {
+    background-color: #A00000;
+    color: #FFFFFF;
+}
+
+/* Main Content */
+.containe-cartao {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.Cards {
+    width: 100%;
+    max-width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.Cartes {
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: #000;
+}
+
+.Vector-1 {
+    width: 303.7px;
+    height: 320.1px;
+    background-color: #e4e4e7;
+    margin: 15px;
+    flex-grow: 0;
+}
+
+.Rectangle-6 {
+    width: 315px;
+    height: 179px;
+    margin: 15px;
+    padding: 25px;
+    border-radius: 5px;
+    border: solid 3px #e9e2e2;
+}
+
+.Adicionar-CartaCarto {
+    font-size: 19px;
+    color: #535353;
+}
+
+.Ellipse-1 {
+    width: 70px;
+    height: 70px;
+    border: solid 3px #c4c4c4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 15px auto;
+}
+
+.Union {
+    width: 37px;
+    height: 37px;
+    background-color: #c4c4c4;
+    position: relative;
+}
+
+.Rectangle-7,
+.Rectangle-8 {
+    position: absolute;
+    background-color: #c4c4c4;
+}
+
+.Rectangle-7 {
+    width: 4.5px;
+    height: 37px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Rectangle-8 {
+    width: 37px;
+    height: 4.5px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+}
+
+.Line-1 {
+    width: 90%;
+    height: 1px;
+    background-color: #ccc7c7;
+    margin: 42px auto;
+}
+
+.Transaes-recentes {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.Rectangle-5 {
+    background-color: #bf930c;
+    border-radius: 2px;
+    padding: 15px;
+    margin-bottom: 29px;
+}
+
+.Type {
+    color: #fff;
+    font-size: 16px;
+}
+
+.Debit {
+    font-size: 9.9px;
+    color: #d0021b;
+}
+
+.Frame-19 {
+    background-color: rgba(76, 217, 200, 0.22);
+    border-radius: 82.1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
