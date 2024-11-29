@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athenas Bank Dashboard</title>
+    <link rel="stylesheet" href="styleNovo.css">
+</head>
+<body>
+    <div class="sidebar">
+            <div class="logo-area">
+                <div class="logo-circle">
+                </div>
+                <div class="bank-name">Athenas Bank</div>
+            </div>
+
+        <nav class="nav-links">
+                <a href="#" class="nav-item">    <img src="vector.png" alt="" class="icon">
+                    Inicio</a>
+                <a href="#" class="nav-item"><img src="carteira.png" alt="" class="icon">
+                    Conta</a>
+                <a href="#" class="nav-item"> <img src="transf.png" alt="" class="icon">
+                    Solicitações</a>
+                <a href="#" class="nav-item">     <img src="vector.png" alt="" class="icon">
+                    Cartões</a>
+                <a href="#" class="nav-item">
+                    <img src="vector.png" alt="" class="icon">Transferências</a>
+
+            <div class="widgets-area">
+    
+            <div class="profile-section">
+                <div class="widget-placeholder">
+                    <a href="#">Perfil</a>
+                </div>
+                <button class="logout">Sair</button>
+            </div>
+        </div>
+        </nav>
+    </div>
+
+    <div class="main-content">
+        <section class="cards-section">
+            <h2 class="section-title">Cartões</h2>
+            <div class="cards-grid">
+                <div class="card debit-card">
+                </div>
+                <div class="card credit-card">
+                </div>
+                <div class="card add-card">
+                    <div style="font-size: 2rem;">+</div>
+                    <div>Adicionar CartaCartão</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="transactions-section">
+            <div class="filter-section">
+                <h2 class="section-title">Transações recentes</h2>
+                <div>
+                    <span>Filtrar</span>
+                    <select>
+                        <option>Tipo</option>
+                        <option>Todos</option>
+                        <option>Débito</option>
+                        <option>Crédito</option>
+                    </select>
+                </div>
+            </div>
+
+            <table class="transactions">
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Data</th>
+                        <th>Conta</th>
+                        <th>Detalhes</th>
+                        <th>Valors</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="transaction-type type-debit">Débito</span></td>
+                        <td>11/20/20</td>
+                        <td>Conta Corrente</td>
+                        <td>Motel do Zé</td>
+                        <td>90,00</td>
+                        <td>•••</td>
+                    </tr>
+                    <tr>
+                        <td><span class="transaction-type type-debit">Débito</span></td>
+                        <td>11/20/20</td>
+                        <td>Conta Corrente</td>
+                        <td>Motel do Zé</td>
+                        <td>90,00</td>
+                        <td>•••</td>
+                    </tr>
+                    <tr>
+                        <td><span class="transaction-type type-refund">Crédito</span></td>
+                        <td>11/20/20</td>
+                        <td>Conta Corrente</td>
+                        <td>Motel do Zé</td>
+                        <td>90,00</td>
+                        <td>•••</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="pagination">
+                <button>Anterior</button>
+                <button class="active">1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>Próximo</button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athenas Bank Dashboard</title>
+    <link rel="stylesheet" href="styleNovo.css">
+</head>
+<body>
+    <div class="sidebar">
+            <div class="logo-area">
+                <div class="logo-circle">
+                </div>
+                <div class="bank-name">Athenas Bank</div>
+            </div>
+
+        <nav class="nav-links">
+                <a href="#" class="nav-item">    <img src="vector.png" alt="" class="icon">
+                    Inicio</a>
+                <a href="#" class="nav-item"><img src="carteira.png" alt="" class="icon">
+                    Conta</a>
+                <a href="#" class="nav-item"> <img src="transf.png" alt="" class="icon">
+                    Solicitações</a>
+                <a href="#" class="nav-item">     <img src="vector.png" alt="" class="icon">
+                    Cartões</a>
+                <a href="#" class="nav-item">
+                    <img src="vector.png" alt="" class="icon">Transferências</a>
+
+            <div class="widgets-area">
+    
+            <div class="profile-section">
+                <div class="widget-placeholder">
+                    <a href="#">Perfil</a>
+                </div>
+                <button class="logout">Sair</button>
+            </div>
+        </div>
+        </nav>
+    </div>
+
+  <div class="main-contentsolici">
+        <div class="page-header">
+            Início
+        </div>
+
+        <div class="welcome-message">
+            <h1>
+                Bem-vindo ao <span class="highlight">Athenas Bank</span>:<br>
+                Liberdade em Crédito,<br>
+                Oportunidade Sem Espera!
+            </h1>
+        </div>
+
+        <div class="slider-container">
+            <div class="slider-value" id="slider-value">100</div>
+            <input type="range" id="credit-slider" class="slider" min="0" max="6000" value="100" oninput="updateSliderValue(this.value)">
+            <button class="request-button">Solicitar</button>
+        </div>
+
+        <script>
+            // Função para atualizar o valor do slider
+            function updateSliderValue(value) {
+                document.getElementById('slider-value').textContent = value;
+            }
+        
+            // Função para redirecionar ao clicar no botão
+            document.getElementById("btn-solicitar").onclick = function() {
+                window.location.href = "Formulario.html";
+            };
+        </script>
+
+        <div class="paginationer">
+            <button>Anterior</button>
+            <button class="active">1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>Próximo</button>
+        </div>
+  
+    </div>
+</body>
+</html>
