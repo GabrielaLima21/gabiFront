@@ -295,7 +295,7 @@ select {
 .slider {
     width: 100%;
     height: 4px;
-    background: rgba(255, 255, 255, 0.2);
+    color: #D4AF37;
     border-radius: 2px;
     position: relative;
 }
@@ -305,7 +305,6 @@ select {
     position: absolute;
     width: 12px;
     height: 12px;
-    background: #D4AF37;
     border-radius: 50%;
     top: 50%;
     left: 30%;
@@ -434,13 +433,13 @@ select.form-control {
     background: #c4a030;
 }
 
-.pagination {
+.paginationerz {
     display: flex;
     gap: 0.25rem;
     margin-top: 2rem;
 }
 
-.pagination button {
+.paginationerz button {
     padding: 0.5rem 1rem;
     border: 1px solid rgba(255, 255, 255, 0.2);
     background: none;
@@ -448,6 +447,6 @@ select.form-control {
     cursor: pointer;
 }
 
-.pagination button.active {
+.paginationerz button.active {
     background: rgba(255, 255, 255, 0.1);
 }
