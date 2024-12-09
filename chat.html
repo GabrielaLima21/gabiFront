@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athenas Bank - Chatbot</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-area">
+            <div class="logo-circle">
+            </div>
+            <div class="bank-name">Athenas Bank</div>
+        </div>
+
+    <nav class="nav-links">
+            <a href="#" class="nav-item">    <img src="vector.png" alt="" class="icon">
+                Inicio</a>
+            <a href="#" class="nav-item"><img src="carteira.png" alt="" class="icon">
+                Conta</a>
+            <a href="#" class="nav-item"> <img src="transf.png" alt="" class="icon">
+                Solicitações</a>
+            <a href="#" class="nav-item">     <img src="vector.png" alt="" class="icon">
+                Cartões</a>
+            <a href="#" class="nav-item">
+                <img src="vector.png" alt="" class="icon">Transferências</a>
+
+        <div class="widgets-area">
+
+        <div class="profile-section">
+            <div class="widget-placeholder">
+                <a href="#">Perfil</a>
+            </div>
+            <button class="logout">Sair</button>
+        </div>
+    </div>
+    </nav>
+</div>
+    <div class="main-content">
+        <div class="chat-container">
+            <div class="chat-header">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+                <span class="chat-title">Atendimento Athenas Bank</span>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="message message-bot">Olá! Bem-vindo ao atendimento do Athenas Bank. Como posso ajudar você hoje?</div>
+                <div class="message message-user">Oi, gostaria de saber como faço para solicitar um cartão de crédito.</div>
+                <div class="message message-bot">Claro, posso ajudar com isso! Para solicitar um cartão de crédito, você pode seguir estes passos:
+
+1. Acesse sua conta online ou o aplicativo do Athenas Bank
+2. Vá para a seção "Cartões"
+3. Clique em "Solicitar novo cartão"
+4. Escolha o tipo de cartão que deseja
+5. Preencha o formulário de solicitação
+6. Envie os documentos necessários, se solicitado
+
+Após esses passos, analisaremos sua solicitação e entraremos em contato em breve. Posso ajudar com mais alguma coisa?</div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Digite sua mensagem...">
+                <button onclick="sendMessage()">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function sendMessage() {
+            const input = document.getElementById('user-input');
+            const message = input.value.trim();
+            if (message) {
+                const chatMessages = document.getElementById('chat-messages');
+                const userMessage = document.createElement('div');
+                userMessage.className = 'message message-user';
+                userMessage.textContent = message;
+                chatMessages.appendChild(userMessage);
+                input.value = '';
+            
+                setTimeout(() => {
+                    const botMessage = document.createElement('div');
+                    botMessage.className = 'message message-bot';
+                    botMessage.textContent = "Obrigado por sua mensagem. Um de nossos atendentes entrará em contato em breve para ajudar com sua solicitação.";
+                    chatMessages.appendChild(botMessage);
+                    chatMessages.scrollTop = chatMessages.scrollHeight;
+                }, 1000);
+            }
+        }
+
+        document.getElementById('user-input').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+    </script>
+</body>
+</html>
